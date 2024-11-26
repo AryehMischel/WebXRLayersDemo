@@ -1,6 +1,6 @@
 # WebXR Layers Demo
 
-This project demonstrates the use of the WebXR Layer API in an interactive Three.js scene. The demo showcases how to render high-quality stereo images using compressed GPU textures, targeting Meta hardware but with potential for cross-device compatibility using the Basis Universal intermediate file format. If interested in seeing how this developed here is my main [repo](https://github.com/AryehMischel/WebXRLayers-Playground) for experimenting with the WebXR Layers API.
+This project demonstrates the use of the WebXR Layer API in an interactive Three.js scene. The demo showcases how to render high-quality stereo images using compressed GPU textures, targeting Meta hardware but with potential for cross-device compatibility using the Basis Universal intermediate file format. If interested this is the main [repo](https://github.com/AryehMischel/WebXRLayers-Playground) I have been using to experiment with the WebXR Layers API.
 
 ## Features
 
