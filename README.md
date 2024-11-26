@@ -1,6 +1,6 @@
 # WebXR Layers Demo
 
-This project demonstrates the use of the WebXR Layer API in an interactive Three.js scene. The demo showcases how to render high-quality stereo images using compressed GPU textures, targeting Meta hardware but with potential for cross-device compatibility using the Basis Universal intermediate file format.
+This project demonstrates the use of the WebXR Layer API in an interactive Three.js scene. The demo showcases how to render high-quality stereo images using compressed GPU textures, targeting Meta hardware but with potential for cross-device compatibility using the Basis Universal intermediate file format. If interested in seeing how this developed here is my main [repo for experimenting with XR Layers](https://github.com/AryehMischel/WebXRLayers-Playground)
 
 ## Features
 
@@ -21,8 +21,8 @@ This project demonstrates the use of the WebXR Layer API in an interactive Three
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/wexxrlayersdemo.git
-   cd wexxrlayersdemo
+   git clone https://github.com/AryehMischel/WebXRLayersDemo
+   cd WebXRLayersDemo
    ```
 
 2. Install dependencies:
@@ -39,39 +39,23 @@ This project demonstrates the use of the WebXR Layer API in an interactive Three
 
 2. Start the development server:
    ```sh
-   npm run dev
+   npm start
    ```
 
-3. Open your browser and navigate to `http://localhost:8080` to view the demo.
+3. Open your browser and navigate to `http://localhost:3000` to view the demo.
 
 ## Project Structure
 
-- `src/`: Contains the source code for the project.
-  - `index.js`: Entry point for the application.
-  - 
+- `server.js`: Entry point for the application.  
+- `public/app.js`: Main application logic, including scene setup and WebXR layer management.
+- `public/index.html`: Main HTML file for the demo.
+- `bundled file can be found on the build branch`
 
-app.js
-
-: Main application logic, including scene setup and WebXR layer management.
-- `dist/`: Contains the bundled output files.
-- `index.html`: Main HTML file for the demo.
-- 
-
-webpack.config.js
-
-: Webpack configuration file.
-- 
-
-package.json
-
-: Project metadata and dependencies.
 
 ## Usage
 
-- **WebXR Layers**: The demo uses "WebXR__Layer" custom classes for managing and interacting with the underlying WebXR Composite Layers. In this demo we are just using the "WebXRQuadUILayer" and the "WebXRCubeLayerASTC", but I have classes for all layer types
-
- class to create and manage WebXR layers.
-- **Three.js Scene**: The scene is set up with various Three.js components, including a camera, lights, and interactive elements.
+- **WebXR Layers**: The demo uses "WebXR__Layer" classes for managing and interacting with the underlying Composite Layers supplied by the WebXR API. In this demo we are just using the "WebXRQuadUILayer" and the "WebXRCubeLayerASTC", but there are classes for all layer types.
+- **Three.js Scene**: The scene is set up with various Three.js components, including a camera, XR Controllers, raycasting, OrbitControls, lights, and other interactive elements.
 - **Polyfill**: A polyfill is included to ensure broader compatibility with devices that support WebXR.
 
 ## Contributing
