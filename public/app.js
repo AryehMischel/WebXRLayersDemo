@@ -100,7 +100,7 @@ if (ETC_EXT) { console.log("ETC_EXT", ETC_EXT) } else {
 
 
 
-let cdnPath = 'https://d1w8hynvb3moja.cloudfront.net/demo'
+let cdnPath = "./Assets" //'https://d1w8hynvb3moja.cloudfront.net/demo'
 let cubeMapFileExtensions = [
     'left/px.astc', 'left/nx.astc', 'left/py.astc', 'left/ny.astc', 'left/pz.astc', 'left/nz.astc',
     'right/px.astc', 'right/nx.astc', 'right/py.astc', 'right/ny.astc', 'right/pz.astc', 'right/nz.astc'
